@@ -1,0 +1,51 @@
+<table>
+    
+        <tr>
+            <td>
+                Id
+            </td>
+            <td>
+                Name
+            </td>
+            <td>
+                Age
+            </td>
+            <td>
+                EmailId
+            </td>
+            <td>
+                Mobile_No
+            </td>
+        </tr>
+
+    <tr *ngFor="let users of userDetails">
+        <td>
+            {{users.id}}
+           
+        </td>
+        <td>
+         
+            {{users.Name}}
+           
+         
+        </td>
+        <td>
+           
+            {{users.Age}}
+         
+        </td>
+
+        <td>
+            
+            {{users.EmailId}}
+       
+         
+        </td>
+        <td>
+           
+            {{users.Mobile_No}}
+         
+        </td>
+    </tr>
+
+</table>

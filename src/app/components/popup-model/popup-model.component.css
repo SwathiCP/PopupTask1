@@ -1,0 +1,9 @@
+.flex{
+    display: flex;
+}
+.justify-content-center {
+    justify-content: center; /* Center content horizontally */
+}
+.p-button{
+    padding-top: 3%;
+}
