@@ -1,0 +1,40 @@
+<div class="card flex flex-column md:flex-row gap-3">
+    <h1>Register Form</h1>
+    <p-inputGroup>
+        <p-inputGroupAddon>UserName
+            <!-- <i class="pi pi-user"></i> -->
+        </p-inputGroupAddon>
+        <input pInputText placeholder="Username" [(ngModel)]="singupObg.userName" />
+    </p-inputGroup>
+
+    <p-inputGroup>
+        <p-inputGroupAddon>Email</p-inputGroupAddon>
+        <input type="text" pInputText placeholder="Email" [(ngModel)]="singupObg.email" />
+        <!-- <p-inputGroupAddon>.00</p-inputGroupAddon> -->
+    </p-inputGroup>
+
+    <p-inputGroup>
+        <p-inputGroupAddon>PassWord</p-inputGroupAddon>
+        <input type="text" pInputText placeholder="Password" [(ngModel)]="singupObg.password" />
+    </p-inputGroup>
+    <button (click)="register()">Register Button</button>
+</div>
+
+<div>
+    <h1>Login Form</h1>
+    <div class="card flex flex-column md:flex-row gap-3">
+        <p-inputGroup>
+            <p-inputGroupAddon>UserName
+                <!-- <i class="pi pi-user"></i> -->
+            </p-inputGroupAddon>
+            <input pInputText placeholder="Username" [(ngModel)]="loginObj.userName" />
+        </p-inputGroup>
+        <p-inputGroup>
+            <p-inputGroupAddon>PassWord</p-inputGroupAddon>
+            <input type="text" pInputText placeholder="Password" [(ngModel)]="loginObj.password" />
+        </p-inputGroup>
+        <button (click)="login()">Login</button>
+    </div>
+
+</div>
+
